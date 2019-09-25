@@ -1,0 +1,854 @@
+@charset "UTF-8";
+/*font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;*/
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0; }
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline; }
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none; }
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none; }
+
+/* Код для подключения шрифта в /css/stylename.css */
+@font-face {
+  font-family: "GothamProRegular";
+  src: url("../fonts/GothamProRegular/GothamProRegular.eot");
+  src: url("../fonts/GothamProRegular/GothamProRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamProRegular/GothamProRegular.woff") format("woff"), url("../fonts/GothamProRegular/GothamProRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "GothamProBold";
+  src: url("../fonts/GothamProBold/GothamProBold.eot");
+  src: url("../fonts/GothamProBold/GothamProBold.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamProBold/GothamProBold.woff") format("woff"), url("../fonts/GothamProBold/GothamProBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "GothamProBlack";
+  src: url("../fonts/GothamProBlack/GothamProBlack.eot");
+  src: url("../fonts/GothamProBlack/GothamProBlack.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamProBlack/GothamProBlack.woff") format("woff"), url("../fonts/GothamProBlack/GothamProBlack.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "GothamProItalic";
+  src: url("../fonts/GothamProItalic/GothamProItalic.eot");
+  src: url("../fonts/GothamProItalic/GothamProItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamProItalic/GothamProItalic.woff") format("woff"), url("../fonts/GothamProItalic/GothamProItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "GothamProMedium";
+  src: url("../fonts/GothamProMedium/GothamProMedium.eot");
+  src: url("../fonts/GothamProMedium/GothamProMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamProMedium/GothamProMedium.woff") format("woff"), url("../fonts/GothamProMedium/GothamProMedium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "GothamProLight";
+  src: url("../fonts/GothamProLight/GothamProLight.eot");
+  src: url("../fonts/GothamProLight/GothamProLight.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamProLight/GothamProLight.woff") format("woff"), url("../fonts/GothamProLight/GothamProLight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "GothamProMediumItalic";
+  src: url("../fonts/GothamProMediumItalic/GothamProMediumItalic.eot");
+  src: url("../fonts/GothamProMediumItalic/GothamProMediumItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamProMediumItalic/GothamProMediumItalic.woff") format("woff"), url("../fonts/GothamProMediumItalic/GothamProMediumItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "GothamProLightItalic";
+  src: url("../fonts/GothamProLightItalic/GothamProLightItalic.eot");
+  src: url("../fonts/GothamProLightItalic/GothamProLightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamProLightItalic/GothamProLightItalic.woff") format("woff"), url("../fonts/GothamProLightItalic/GothamProLightItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "GothamProBoldItalic";
+  src: url("../fonts/GothamProBoldItalic/GothamProBoldItalic.eot");
+  src: url("../fonts/GothamProBoldItalic/GothamProBoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamProBoldItalic/GothamProBoldItalic.woff") format("woff"), url("../fonts/GothamProBoldItalic/GothamProBoldItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "GothamProBlackItalic";
+  src: url("../fonts/GothamProBlackItalic/GothamProBlackItalic.eot");
+  src: url("../fonts/GothamProBlackItalic/GothamProBlackItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamProBlackItalic/GothamProBlackItalic.woff") format("woff"), url("../fonts/GothamProBlackItalic/GothamProBlackItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+/* === mixins ===*/
+/* === /mixins ===*/
+/* === variables ===*/
+/* === /variables ===*/
+/* === common ===*/
+* {
+  box-sizing: border-box; }
+
+.section-outer {
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 1920px; }
+
+.section-inner {
+  max-width: 940px;
+  margin: 0 auto; }
+
+body {
+  font-family: 'GothamProRegular'; }
+
+/* === /common ===*/
+/* === header ===*/
+.section-header {
+  color: #292929;
+  margin-top: 30px; }
+  .section-header .section-header-cover {
+    display: flex;
+    justify-content: space-between; }
+  .section-header-logo {
+    display: flex; }
+    .section-header-logo-icon {
+      margin-right: 14px; }
+    .section-header-logo-name__title {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 22px;
+      text-transform: uppercase; }
+    .section-header-logo-name__subtitle {
+      font-size: 11px;
+      font-weight: 300;
+      line-height: 22px;
+      color: #969696; }
+  .section-header-wrapper {
+    display: flex; }
+  .section-header-phone {
+    padding-right: 30px; }
+    .section-header-phone_number {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 22px;
+      text-transform: uppercase; }
+    .section-header-phone_subtitle {
+      font-size: 11px;
+      font-weight: 300;
+      line-height: 22px;
+      color: #969696; }
+    .section-header-phone-btn {
+      display: flex; }
+      .section-header-phone-btn-back_call {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 22px;
+        border: 2px solid #292929;
+        background: transparent;
+        width: 160px;
+        height: 40px;
+        color: #292929;
+        font-family: GothamProMedium; }
+  .section-header .section-header-nav {
+    position: relative;
+    top: 30px;
+    z-index: 1; }
+    .section-header .section-header-nav__list {
+      background-color: #ffd200; }
+      .section-header .section-header-nav__list-item__ul {
+        display: flex;
+        justify-content: space-evenly;
+        padding-left: 0;
+        margin: 0;
+        list-style: none; }
+      .section-header .section-header-nav__list-item__li {
+        padding: 21px 0; }
+        .section-header .section-header-nav__list-item__li a {
+          text-decoration: none;
+          font-family: 'GothamProMedium';
+          font-size: 14px;
+          font-weight: 500;
+          color: #000; }
+
+/* === /header ===*/
+/* === slider ===*/
+.section-slider {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/bg-slider.png) no-repeat 50% 50%;
+  height: 100vh;
+  background-size: cover;
+  color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .section-slider .section-inner {
+    width: 100%; }
+  .section-slider-wrapper__title {
+    font-family: 'GothamProBold';
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 40px; }
+  .section-slider-wrapper__subtitle {
+    font-family: 'GothamProLight';
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    margin-bottom: 60px; }
+  .section-slider-wrapper__btn {
+    display: flex;
+    align-items: center; }
+    .section-slider-wrapper__btn-button {
+      width: 180px;
+      padding: 20px 0;
+      background: #ffd200;
+      color: #0d0d0d;
+      font-family: 'GothamProMedium';
+      font-size: 12px;
+      font-weight: 700;
+      border: none;
+      outline: none;
+      display: inline-block;
+      text-decoration: none;
+      width: 200px;
+      font-family: 'GothamProBlack';
+      font-weight: 900; }
+    .section-slider-wrapper__btn-link {
+      font-family: 'GothamProLight';
+      font-size: 12px;
+      line-height: 22px;
+      font-weight: 300;
+      margin-left: 30px; }
+      .section-slider-wrapper__btn-link a {
+        font-family: 'GothamProMedium';
+        font-weight: 500;
+        text-decoration: underline;
+        color: #fff;
+        margin-left: 15px; }
+
+/* === /slider ===*/
+/* === products ===*/
+.section-products__title {
+  font-family: 'GothamProBold';
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 80px;
+  margin-bottom: 60px;
+  text-align: center; }
+
+.section-products-wrapper {
+  display: flex; }
+  .section-products-wrapper-item + .section-products-wrapper-item {
+    margin-left: 20px; }
+  .section-products-wrapper-item {
+    border: 2px solid #f6f6f6;
+    text-align: center;
+    margin-bottom: 80px; }
+    .section-products-wrapper-item__img {
+      padding-top: 54px; }
+    .section-products-wrapper-item__subtitle {
+      font-family: 'GothamProMedium';
+      font-size: 15px;
+      font-weight: 600;
+      margin-top: 40px;
+      text-decoration: underline; }
+    .section-products-wrapper-item__content {
+      margin-top: 20px;
+      font-family: 'GothamProLight';
+      font-size: 14px;
+      font-weight: 400;
+      color: #626262;
+      padding-left: 24px;
+      padding-right: 24px; }
+    .section-products-wrapper-item__price {
+      margin-top: 30px;
+      font-family: 'GothamProMedium';
+      font-size: 16px;
+      font-weight: 500; }
+    .section-products-wrapper-item__btn {
+      margin-top: 30px;
+      margin-bottom: 36px; }
+    .section-products-wrapper-item__btn-more {
+      width: 180px;
+      padding: 20px 0;
+      background: #ffd200;
+      color: #0d0d0d;
+      font-family: 'GothamProMedium';
+      font-size: 12px;
+      font-weight: 700;
+      border: none;
+      outline: none;
+      display: inline-block;
+      text-decoration: none; }
+
+/* === /products ===*/
+/* === /advantages ===*/
+.section-advantages {
+  background-color: #f4f4f4;
+  text-align: center;
+  overflow: hidden; }
+  .section-advantages__title {
+    font-family: 'GothamProBold';
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 80px;
+    margin-bottom: 60px;
+    text-align: center; }
+  .section-advantages-wrapper {
+    display: flex;
+    margin-bottom: 80px; }
+    .section-advantages-wrapper-item + .section-advantages-wrapper-item {
+      margin-left: 20px; }
+    .section-advantages-wrapper-item:hover {
+      background: #fff; }
+    .section-advantages-wrapper-item {
+      width: 100%;
+      border: 2px solid white; }
+      .section-advantages-wrapper-item__img {
+        margin-top: 40px; }
+      .section-advantages-wrapper-item__subtitle {
+        font-family: 'GothamProMedium';
+        font-size: 15px;
+        font-weight: 600;
+        margin-top: 40px; }
+      .section-advantages-wrapper-item__content {
+        font-family: 'GothamProLight';
+        font-size: 14px;
+        font-weight: 400;
+        color: #626262;
+        padding-left: 24px;
+        padding-right: 24px;
+        margin-top: 20px;
+        margin-bottom: 40px; }
+
+/* === /advantages ===*/
+/* === popular ===*/
+.section-popular {
+  text-align: center;
+  overflow: hidden; }
+  .section-popular__title {
+    font-family: 'GothamProBold';
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 80px;
+    margin-bottom: 60px;
+    text-align: center; }
+  .section-popular-wrapper {
+    display: flex;
+    margin-bottom: 80px; }
+    .section-popular-wrapper-item + .section-popular-wrapper-item {
+      margin-left: 20px; }
+    .section-popular-wrapper-item {
+      width: 100%;
+      border: 2px solid #f6f6f6; }
+      .section-popular-wrapper-item__img {
+        margin-top: 20px;
+        position: relative; }
+        .section-popular-wrapper-item__img-active {
+          position: absolute;
+          top: 10px;
+          left: 30px;
+          color: white;
+          font-family: 'GothamProMedium';
+          font-size: 10px;
+          font-weight: 500;
+          background-color: red;
+          padding: 5px 10px; }
+      .section-popular-wrapper-item__subtitle {
+        margin-top: 20px;
+        font-family: 'GothamProRegular';
+        font-size: 13px;
+        font-weight: 400;
+        text-decoration: underline; }
+      .section-popular-wrapper-item__content {
+        font-family: 'GothamProLight';
+        font-size: 14px;
+        font-weight: 400;
+        color: #626262;
+        padding-left: 24px;
+        padding-right: 24px;
+        margin-top: 20px;
+        margin-bottom: 40px; }
+      .active .section-popular-wrapper-item__price:before {
+        content: "1 500 р./т	\00a0 \00a0 ";
+        color: red;
+        vertical-align: super;
+        font-family: 'GothamProRegular';
+        font-size: 10px;
+        font-weight: 400;
+        text-decoration: line-through; }
+      .section-popular-wrapper-item__price {
+        margin-top: 20px;
+        font-family: 'GothamProMedium';
+        font-size: 16px;
+        font-weight: 500; }
+      .section-popular-wrapper-item__btn {
+        margin-top: 20px;
+        margin-bottom: 36px; }
+      .section-popular-wrapper-item__btn-more {
+        width: 180px;
+        padding: 20px 0;
+        background: #ffd200;
+        color: #0d0d0d;
+        font-family: 'GothamProMedium';
+        font-size: 12px;
+        font-weight: 700;
+        border: none;
+        outline: none;
+        display: inline-block;
+        text-decoration: none; }
+
+/* === /popular ===*/
+/* === services ===*/
+.section-services {
+  background-color: #f4f4f4;
+  text-align: center;
+  overflow: hidden; }
+  .section-services__title {
+    font-family: 'GothamProBold';
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 80px;
+    margin-bottom: 60px;
+    text-align: center; }
+  .section-services-wrapper {
+    display: flex;
+    margin-bottom: 80px; }
+    .section-services-wrapper-item + .section-services-wrapper-item {
+      margin-left: 20px; }
+    .section-services-wrapper-item {
+      width: 100%;
+      border: 2px solid white; }
+      .section-services-wrapper-item__img {
+        margin-top: 40px; }
+      .section-services-wrapper-item__subtitle {
+        font-family: 'GothamProMedium';
+        font-size: 15px;
+        font-weight: 600;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        text-decoration: underline; }
+
+/* === /services ===*/
+/* === contacts ===*/
+.section-contacts {
+  background: url(../img/bg-contacts.jpg) no-repeat 50% 50%;
+  background-size: cover; }
+  .section-contacts-cover {
+    display: flex;
+    justify-content: space-between; }
+  .section-contacts-pin {
+    align-self: center;
+    margin-left: 80px; }
+  .section-contacts-wrapper {
+    background: #fff;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    align-self: flex-end;
+    padding-left: 60px; }
+    .section-contacts-wrapper__title {
+      font-family: 'GothamProBold';
+      font-size: 20px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-top: 80px;
+      margin-bottom: 60px;
+      text-align: center;
+      text-align: left;
+      margin-top: 60px; }
+    .section-contacts-wrapper__number {
+      margin-top: 50px;
+      display: flex; }
+      .section-contacts-wrapper__number-img {
+        margin-right: 20px;
+        align-self: baseline; }
+      .section-contacts-wrapper__number-content {
+        font-family: 'GothamProMedium';
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 30px;
+        text-transform: uppercase;
+        align-self: baseline; }
+    .section-contacts-wrapper__address {
+      margin-top: 40px;
+      margin-right: 80px;
+      display: flex;
+      justify-content: center; }
+      .section-contacts-wrapper__address-img {
+        margin-right: 20px; }
+      .section-contacts-wrapper__address-content {
+        font-family: 'GothamProRegular';
+        font-size: 14px;
+        font-weight: 400; }
+    .section-contacts-wrapper__email {
+      margin-top: 40px;
+      display: flex;
+      margin-bottom: 70px; }
+      .section-contacts-wrapper__email-img {
+        margin-right: 20px; }
+      .section-contacts-wrapper__email-content {
+        font-family: 'GothamProRegular';
+        font-size: 14px;
+        font-weight: 400;
+        text-decoration: underline; }
+
+/* === /contacts ===*/
+/* === footer ===*/
+.section-footer {
+  color: #fff;
+  background: #292929;
+  padding-top: 30px; }
+  .section-footer .section-footer-cover {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 45px; }
+    .section-footer .section-footer-cover-copyright {
+      text-align: left; }
+  .section-footer-logo-cover {
+    display: flex; }
+    .section-footer-logo-cover-icon {
+      display: flex;
+      margin-right: 14px; }
+    .section-footer-logo-cover-name__title {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 22px;
+      text-transform: uppercase; }
+    .section-footer-logo-cover-name__subtitle {
+      font-size: 11px;
+      font-weight: 300;
+      line-height: 22px; }
+    .section-footer-logo-cover-copyright {
+      margin-top: 50px;
+      font-family: 'GothamProRegular';
+      font-size: 12px;
+      font-weight: 400; }
+  .section-footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; }
+  .section-footer-phone_number {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    text-transform: uppercase;
+    text-align: right; }
+  .section-footer-phone_subtitle {
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 22px; }
+  .section-footer-phone-btn {
+    display: flex;
+    margin-top: 30px; }
+    .section-footer-phone-btn-back_call {
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 22px;
+      border: 2px solid #fff;
+      background: transparent;
+      width: 160px;
+      height: 40px;
+      color: #fff;
+      font-family: GothamProMedium; }
+
+/* === /footer ===*/
