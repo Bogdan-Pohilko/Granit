@@ -437,6 +437,7 @@ body {
     .section-header-phone-btn {
       display: flex; }
       .section-header-phone-btn-back_call {
+        cursor: pointer;
         font-size: 12px;
         font-weight: 500;
         line-height: 22px;
@@ -507,6 +508,7 @@ body {
       outline: none;
       display: inline-block;
       text-decoration: none;
+      cursor: pointer;
       width: 200px;
       font-family: 'GothamProBlack';
       font-weight: 900; }
@@ -577,7 +579,8 @@ body {
       border: none;
       outline: none;
       display: inline-block;
-      text-decoration: none; }
+      text-decoration: none;
+      cursor: pointer; }
 
 /* === /products ===*/
 /* === /advantages ===*/
@@ -696,7 +699,8 @@ body {
         border: none;
         outline: none;
         display: inline-block;
-        text-decoration: none; }
+        text-decoration: none;
+        cursor: pointer; }
 
 /* === /popular ===*/
 /* === services ===*/
@@ -843,6 +847,7 @@ body {
     display: flex;
     margin-top: 30px; }
     .section-footer-phone-btn-back_call {
+      cursor: pointer;
       font-size: 12px;
       font-weight: 500;
       line-height: 22px;
