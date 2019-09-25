@@ -406,7 +406,8 @@ body {
     display: flex;
     justify-content: space-between; }
   .section-header-logo {
-    display: flex; }
+    display: flex;
+    cursor: pointer; }
     .section-header-logo-icon {
       margin-right: 14px; }
     .section-header-logo-name__title {
@@ -805,7 +806,8 @@ body {
     .section-footer .section-footer-cover-copyright {
       text-align: left; }
   .section-footer-logo-cover {
-    display: flex; }
+    display: flex;
+    cursor: pointer; }
     .section-footer-logo-cover-icon {
       display: flex;
       margin-right: 14px; }
